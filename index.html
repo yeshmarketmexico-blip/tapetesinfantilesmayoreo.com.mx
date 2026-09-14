@@ -118,7 +118,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet"></noscript>
+<style>body{font-family:system-ui,-apple-system,sans-serif}</style>
 
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -174,7 +176,7 @@ nav{background:var(--bl);border-bottom:3px solid var(--hero);position:sticky;top
 .hb{display:inline-block;background:var(--hero);color:var(--bl);font-weight:800;font-size:11px;padding:4px 13px;border-radius:50px;margin-bottom:14px;letter-spacing:.04em}
 .hero h1{font-size:clamp(1.7rem,4vw,2.6rem);font-weight:900;color:var(--tx);line-height:1.1;margin-bottom:12px}
 .hero h1 em{font-style:normal;color:var(--hero)}
-.hs{font-size:.95rem;color:var(--ts);margin-bottom:22px;line-height:1.65;max-width:440px}
+.hs{font-size:.95rem;color:#4A5568;margin-bottom:22px;line-height:1.65;max-width:440px}
 .ph-wrap{display:flex;gap:10px;margin-bottom:18px;flex-wrap:wrap}
 .ph{background:var(--bl);border:2px solid var(--gm);border-radius:var(--r);padding:11px 15px;text-align:center;min-width:110px;box-shadow:0 2px 8px rgba(107,174,214,.1)}
 .ph.f{border-color:var(--hero);background:#EAF4FF}
@@ -191,7 +193,7 @@ nav{background:var(--bl);border-bottom:3px solid var(--hero);position:sticky;top
 .ph-ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.2);font-size:11px;gap:8px;padding:20px;text-align:center}
 .ph-r{width:54px;height:54px;border:2px dashed rgba(255,255,255,.15);border-radius:8px}
 .trust{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;padding-top:26px;border-top:2px solid var(--gm)}
-.ti{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--ts);font-weight:700}
+.ti{display:flex;align-items:center;gap:7px;font-size:12px;color:#4A5568;font-weight:700}
 .td{width:6px;height:6px;background:var(--hero);border-radius:50%;flex-shrink:0}
 
 /* KEYWORDS STRIP */
@@ -238,18 +240,18 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .nd .ey{color:var(--am)}
 .nd h2{color:var(--bl)}
 .nd h2 em{background:var(--am);color:var(--hero)}
-.nd .sd{color:rgba(255,255,255,.65)}
+.nd .sd{color:rgba(255,255,255,.85)}
 .nd .ntag{background:rgba(255,214,10,.15);color:var(--am);border-color:rgba(255,214,10,.3)}
-.nd .nlist li{color:rgba(255,255,255,.7)}
+.nd .nlist li{color:rgba(255,255,255,.88)}
 .nd .ns{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
 .nd .ns-n{color:var(--bl)}
-.nd .ns-l{color:rgba(255,255,255,.5)}
+.nd .ns-l{color:rgba(255,255,255,.75)}
 .nd .ck{background:var(--am);color:var(--hero)}
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:24px}
 .fg{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:18px 14px;text-align:center}
 .fg-i{font-size:24px;margin-bottom:8px}
 .fg-t{font-size:13px;font-weight:800;color:var(--bl);margin-bottom:4px}
-.fg-d{font-size:12px;color:rgba(255,255,255,.5);line-height:1.5}
+.fg-d{font-size:12px;color:rgba(255,255,255,.8);line-height:1.5}
 
 /* FORMATOS */
 #formatos{background:var(--gf)}
@@ -342,7 +344,7 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .ml-r{font-size:2rem;font-weight:900;color:var(--hero)}
 .ml-s{color:#FFB347;font-size:18px}
 .ml-t{font-size:13px;color:var(--ts)}
-.ml-t a{color:var(--hero);font-weight:700}
+.ml-t a{color:var(--hero);font-weight:700;text-decoration:underline}
 
 /* FAQ */
 #faq{background:var(--bl)}
@@ -389,9 +391,9 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 .sellos{display:flex;gap:7px;margin-top:12px;flex-wrap:wrap}
 .sello{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:4px 9px;font-size:10px;font-weight:700;color:rgba(255,255,255,.5)}
 .fcol h4{font-size:12px;font-weight:800;color:rgba(255,255,255,.8);margin-bottom:10px;letter-spacing:.04em;text-transform:uppercase}
-.fcol a{display:block;font-size:12px;color:rgba(255,255,255,.42);text-decoration:none;margin-bottom:6px;transition:color .15s}
+.fcol a{display:block;font-size:12px;color:rgba(255,255,255,.72);text-decoration:none;margin-bottom:6px;transition:color .15s}
 .fcol a:hover{color:var(--turq)}
-.fbot{border-top:1px solid rgba(255,255,255,.07);padding-top:20px;font-size:11px;text-align:center;line-height:1.8;max-width:920px;margin:0 auto}
+.fbot{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:11px;text-align:center;line-height:1.8;max-width:920px;margin:0 auto;color:rgba(255,255,255,.65)}
 .fkw{font-size:10px;color:rgba(255,255,255,.15);margin-top:8px;line-height:1.6}
 
 /* WA FLOTANTE */
@@ -430,6 +432,8 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   </div>
 </nav>
 
+<main id="contenido-principal">
+
 <!-- HERO -->
 <section class="hero" aria-label="Tapete foamy bebé gateo al mayoreo México">
   <div class="hi">
@@ -460,7 +464,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 
     <div class="himg">
       <!-- FOTO 1: og-tapetes-foamy-bebes-mayoreo.jpg — bebés jugando en tapetes coloridos, foto alegre y real -->
-      <img src="img/og-tapetes-foamy-bebes-mayoreo.webp"
+      <img src="img/og-tapetes-foamy-bebes-mayoreo.webp" fetchpriority="high" loading="eager"
            alt="Tapete foamy para bebé gateo colorido tipo rompecabezas al mayoreo en México guardería ludoteca"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\'><div class=\'ph-r\'></div>img/og-tapetes-foamy-bebes-mayoreo.jpg</div>'">
     </div>
@@ -486,7 +490,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 2: bebe-gateando-tapete-foamy.jpg — bebé gateando, foto real y alegre -->
-      <img src="img/bebe-gateando-tapete-foamy.webp"
+      <img loading="lazy" src="img/bebe-gateando-tapete-foamy.webp"
            alt="Tapete foamy para bebé gateo EVA rompecabezas colorido antiderrapante no tóxico"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/bebe-gateando-tapete-foamy.jpg</div>'">
       <span class="nbadge">👶 Bebés y gateo</span>
@@ -527,7 +531,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni rev">
     <div class="nimg">
       <!-- FOTO 3: tapete-foamy-guarderia-area-juego.jpg — área de guardería con tapetes instalados -->
-      <img src="img/tapete-foamy-guarderia-area-juego.webp"
+      <img loading="lazy" src="img/tapete-foamy-guarderia-area-juego.webp"
            alt="Tapete foamy para guardería área de juego bebés niños proveedor mayoreo México"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-guarderia-area-juego.jpg</div>'">
       <span class="nbadge">🍼 Guarderías</span>
@@ -574,7 +578,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 4: tapete-foamy-ludoteca.jpg — ludoteca con piso foamy colorido -->
-      <img src="img/tapete-foamy-ludoteca.webp"
+      <img loading="lazy" src="img/tapete-foamy-ludoteca.webp"
            alt="Tapete foamy para ludoteca salón de juegos infantiles tipo rompecabezas EVA mayoreo"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\'><div class=\'ph-r\'></div>img/tapete-foamy-ludoteca.jpg</div>'">
       <span class="nbadge">🎡 Ludotecas</span>
@@ -614,7 +618,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni rev">
     <div class="nimg">
       <!-- FOTO 5: tapete-foamy-salon-fiestas.jpg — zona Soft Play o área acolchada de salón de fiestas -->
-      <img src="img/tapete-foamy-salon-fiestas.webp"
+      <img loading="lazy" src="img/tapete-foamy-salon-fiestas.webp"
            alt="Tapete foamy para salón de fiestas infantiles zona soft play área acolchada rompecabezas"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-salon-fiestas.jpg</div>'">
       <span class="nbadge">🎉 Salones de Fiestas</span>
@@ -653,7 +657,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 6: tapete-foamy-escuela-preescolar.jpg — área de actividades en piso de preescolar -->
-      <img src="img/tapete-foamy-escuela-preescolar.webp"
+      <img loading="lazy" src="img/tapete-foamy-escuela-preescolar.webp"
            alt="Tapete foamy didáctico para escuela preescolar zona actividades niños rompecabezas EVA"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-escuela-preescolar.jpg</div>'">
       <span class="nbadge">🏫 Escuelas</span>
@@ -697,7 +701,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       <div class="fc">
         <div class="fcimg">
           <!-- FOTO 7: tapete-foamy-16-piezas-32x32.jpg — set de 16 piezas mostrando encaje -->
-          <img src="img/tapete-foamy-16-piezas-32x32.webp"
+          <img loading="lazy" src="img/tapete-foamy-16-piezas-32x32.webp"
                alt="Tapete foamy rompecabezas 16 piezas 32x32 cm para bebé gateo guarderías y ludotecas"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ph-ph" style="display:none;height:100%;background:var(--gm);color:var(--ts)">
@@ -731,7 +735,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       <div class="fc">
         <div class="fcimg">
           <!-- FOTO 8: tapete-foamy-4-piezas-62x62.jpg — set de 4 piezas grandes -->
-          <img src="img/tapete-foamy-4-piezas-62x62.webp"
+          <img loading="lazy" src="img/tapete-foamy-4-piezas-62x62.webp"
                alt="Tapete foamy grande 4 piezas 62x62 cm rompecabezas para ludotecas y salones de fiestas"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ph-ph" style="display:none;height:100%;background:var(--gm);color:var(--ts)">
@@ -774,7 +778,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     <div class="igrid">
       <div class="iimg">
         <!-- FOTO 9: instalacion-tapete-foamy-cuter.jpg — manos armando tapete foamy o cortando con cúter -->
-        <img src="img/instalacion-tapete-foamy-cuter.webp"
+        <img loading="lazy" src="img/instalacion-tapete-foamy-cuter.webp"
              alt="Instalación tapete foamy rompecabezas sin herramientas corte cúter fácil guardería"
              onerror="this.style.display='none';this.parentElement.style.background='var(--gm)';this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'height:100%;color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/instalacion-tapete-foamy-cuter.jpg</div>'">
       </div>
@@ -803,7 +807,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     <h2>20 colores de tapete foamy — pide el que quieras</h2>
     <p class="sd">Surtidos, un solo color o combinación personalizada. Confirma disponibilidad por WhatsApp.</p>
     <!-- FOTO 10: colores-tapetes-foamy-20.jpg — todos los tapetes en distintos colores juntos -->
-    <img src="img/colores-tapetes-foamy-20.webp"
+    <img loading="lazy" src="img/colores-tapetes-foamy-20.webp"
          alt="20 colores disponibles tapete foamy fomi EVA infantil al mayoreo México"
          style="width:100%;border-radius:var(--rg);margin-bottom:18px;aspect-ratio:16/5;object-fit:cover;background:var(--gm)"
          onerror="this.style.display='none'">
@@ -1062,6 +1066,10 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   </div>
 </section>
 
+</main>
+</main>
+
+</main>
 <!-- FOOTER -->
 <footer>
   <div class="foi">
@@ -1076,7 +1084,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       </div>
     </div>
     <div class="fcol">
-      <h4>Para quién</h4>
+      <h3>Para quién</h3>
       <a href="#bebes">Tapete bebé gateo</a>
       <a href="#guarderia">Tapete guardería</a>
       <a href="#ludoteca">Tapete ludoteca</a>
@@ -1084,7 +1092,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       <a href="#escuela">Tapete escuela</a>
     </div>
     <div class="fcol">
-      <h4>Contacto</h4>
+      <h3>Contacto</h3>
       <a href="https://wa.me/525525897917" target="_blank">WhatsApp: 55 2589 7917</a>
       <a href="mailto:ventas@tapetesinfantilesmayoreo.com.mx">✉️ ventas@tapetesinfantilesmayoreo.com.mx</a>
       <a href="#">Av. Yucatán 54-16, Roma Nte., CDMX</a>
