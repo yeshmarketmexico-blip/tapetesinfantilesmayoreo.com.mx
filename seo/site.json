@@ -1,0 +1,42 @@
+{
+  "name": "Tapetes Infantiles Mayoreo",
+  "domain": "tapetesinfantilesmayoreo.com.mx",
+  "canonical": "https://www.tapetesinfantilesmayoreo.com.mx/",
+  "gsc_property": "sc-domain:tapetesinfantilesmayoreo.com.mx",
+  "hosting": "cloudflare-pages",
+  "deploy_dir": "/",
+  "tracking": {
+    "gtm": "GTM-5288M9VT",
+    "ga4_measurement_id": "G-BJ1Q89K941",
+    "ga4_property_id": "562300219",
+    "ga4_stream_id": "16266346434",
+    "clarity": "z82l8cxcg6"
+  },
+  "market": {
+    "country": "Mexico",
+    "language": "Spanish"
+  },
+  "business": "YESH MARKET (CDMX)",
+  "product": "Tapete de foamy EVA para bebé y guarderías al mayoreo (16 piezas 32×32 o 4 piezas 62×62, 8 o 10 mm, 20 colores; mínimo 30 paquetes)",
+  "audience": [
+    "guarderías",
+    "estancias infantiles",
+    "ludotecas",
+    "salones de fiestas infantiles",
+    "preescolares",
+    "jugueterías",
+    "distribuidores"
+  ],
+  "primary_keywords": [
+    "tapete foamy bebe",
+    "tapete de foamy para bebe mayoreo",
+    "tapete fomi bebe",
+    "tapete foamy guarderia",
+    "tapete eva rompecabezas bebe",
+    "tapete foamy mayoreo",
+    "tapetes infantiles mayoreo",
+    "tapete foamy precio"
+  ],
+  "conversion": "contacto por WhatsApp; precio por paquete publicado; pedido mínimo 30 paquetes",
+  "pages": "index.html (landing única), privacidad.html, terminos.html"
+}
