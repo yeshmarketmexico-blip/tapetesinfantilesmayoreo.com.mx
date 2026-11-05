@@ -1,6 +1,6 @@
 # tapetesinfantilesmayoreo.com.mx — guía para el comité SEO
 
-Sitio estático en HTML de **YESH MARKET**: Tapete de foamy EVA para bebé y guarderías al mayoreo (16 piezas 32×32 o 4 piezas 62×62, 8 o 10 mm, 20 colores; mínimo 30 paquetes). Se despliega solo en Cloudflare Pages desde `main`. Los datos del negocio, palabras clave objetivo e IDs de medición están en `seo/site.json`; léelo antes de cualquier análisis.
+Sitio estático en HTML de **YESH MARKET**: Tapete de foamy EVA para bebé y guarderías al mayoreo (16 piezas 32×32 o 4 piezas 62×62, 8 o 10 mm, 21 colores incluidos pastel; mínimo 30 paquetes). Se despliega solo en Cloudflare Pages desde `main`. Los datos del negocio, palabras clave objetivo e IDs de medición están en `seo/site.json`; léelo antes de cualquier análisis.
 
 ## Objetivo
 
