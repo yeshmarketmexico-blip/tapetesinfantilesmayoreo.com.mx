@@ -43,7 +43,7 @@
       "@type": "Organization",
       "@id": "https://www.tapetesinfantilesmayoreo.com.mx/#org",
       "name": "Tapetes Infantiles Mayoreo",
-      "alternateName": ["Tapete Foamy Bebé Mayoreo México","Proveedor Tapetes Foamy Infantil","Tapete Fomi Bebé Mayoreo"],
+      "alternateName": "YESH MARKET",
       "url": "https://www.tapetesinfantilesmayoreo.com.mx/",
       "telephone": "+525525897917",
       "address": {
@@ -54,8 +54,49 @@
         "postalCode": "06700",
         "addressCountry": "MX"
       },
-      "areaServed": {"@type": "Country", "name": "Mexico"},
-      "description": "Proveedor y distribuidor de tapete foamy para bebé, gateo, guarderías y ludotecas al mayoreo en México. Tapete EVA rompecabezas, tapete fomi bebé, 20 colores, envío nacional."
+      "areaServed": {
+        "@type": "Country",
+        "name": "Mexico"
+      },
+      "description": "Proveedor y distribuidor de tapete foamy para bebé, gateo, guarderías y ludotecas al mayoreo en México. Tapete EVA rompecabezas, tapete fomi bebé, 21 colores incluidos tonos pastel, envío nacional."
+    },
+    {
+      "@type": "Store",
+      "@id": "https://www.tapetesinfantilesmayoreo.com.mx/#bodega",
+      "name": "Tapetes Infantiles Mayoreo · YESH MARKET",
+      "url": "https://www.tapetesinfantilesmayoreo.com.mx/",
+      "telephone": "+525525897917",
+      "email": "ventas@tapetesinfantilesmayoreo.com.mx",
+      "parentOrganization": {
+        "@id": "https://www.tapetesinfantilesmayoreo.com.mx/#org"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cuajimalpa de Morelos",
+        "addressRegion": "CDMX",
+        "addressCountry": "MX"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "paymentAccepted": "Tarjeta, transferencia bancaria",
+      "currenciesAccepted": "MXN",
+      "priceRange": "$299–$399 MXN por paquete + IVA",
+      "areaServed": {
+        "@type": "Country",
+        "name": "México"
+      }
     },
     {
       "@type": "ItemList",
@@ -65,10 +106,13 @@
           "@type": "Product",
           "position": 1,
           "name": "Tapete Foamy Bebé Gateo — 16 Piezas 32×32 cm — 8 mm",
-          "description": "Tapete fomi para bebé gateo. 16 piezas de foamy EVA 32×32 cm, 8 mm. Cubre 1.6384 m². Tipo rompecabezas, sin herramientas. No tóxico, antiderrapante. Ideal para guarderías y ludotecas.",
+          "description": "Tapete fomi para bebé gateo. 16 piezas de foamy EVA 32×32 cm, 8 mm. Cubre 1.6384 m². Tipo rompecabezas, sin herramientas. Antiderrapante. Ideal para guarderías y ludotecas.",
           "sku": "TFB-16-32-8MM",
-          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-16-piezas-32x32.webp",
-          "brand": {"@type": "Brand", "name": "Tapetes Infantiles Mayoreo"},
+          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-16-piezas-32x32-880.webp",
+          "brand": {
+            "@type": "Brand",
+            "name": "Tapetes Infantiles Mayoreo"
+          },
           "offers": {
             "@type": "Offer",
             "price": "299",
@@ -76,19 +120,16 @@
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2027-12-31",
             "validFrom": "2026-01-01",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {"@type": "MonetaryAmount", "value": "1000", "currency": "MXN"},
-              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "MX"},
-              "deliveryTime": {"@type": "ShippingDeliveryTime", "businessDays": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]}, "cutoffTime": "18:00:00-06:00", "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 7, "unitCode": "DAY"}}
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "299",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
             },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "MX",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 3,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 30,
+              "unitText": "paquetes"
             }
           }
         },
@@ -98,8 +139,11 @@
           "name": "Tapete Foamy Bebé Gateo — 16 Piezas 32×32 cm — 10 mm",
           "description": "Tapete fomi para bebé gateo reforzado. 16 piezas de foamy EVA 32×32 cm, 10 mm. Cubre 1.6384 m². Mayor acolchado para zonas de juego activo.",
           "sku": "TFB-16-32-10MM",
-          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-16-piezas-32x32.webp",
-          "brand": {"@type": "Brand", "name": "Tapetes Infantiles Mayoreo"},
+          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-16-piezas-32x32-880.webp",
+          "brand": {
+            "@type": "Brand",
+            "name": "Tapetes Infantiles Mayoreo"
+          },
           "offers": {
             "@type": "Offer",
             "price": "399",
@@ -107,19 +151,16 @@
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2027-12-31",
             "validFrom": "2026-01-01",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {"@type": "MonetaryAmount", "value": "1000", "currency": "MXN"},
-              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "MX"},
-              "deliveryTime": {"@type": "ShippingDeliveryTime", "businessDays": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]}, "cutoffTime": "18:00:00-06:00", "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 7, "unitCode": "DAY"}}
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "399",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
             },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "MX",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 3,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 30,
+              "unitText": "paquetes"
             }
           }
         },
@@ -129,8 +170,11 @@
           "name": "Tapete Foamy Infantil Grande — 4 Piezas 62×62 cm — 8 mm",
           "description": "Tapete foamy EVA grande para guarderías y ludotecas. 4 piezas de 62×62 cm, 8 mm. Cubre 1.5376 m². Tipo rompecabezas.",
           "sku": "TFB-4-62-8MM",
-          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-4-piezas-62x62.webp",
-          "brand": {"@type": "Brand", "name": "Tapetes Infantiles Mayoreo"},
+          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-4-piezas-62x62-880.webp",
+          "brand": {
+            "@type": "Brand",
+            "name": "Tapetes Infantiles Mayoreo"
+          },
           "offers": {
             "@type": "Offer",
             "price": "299",
@@ -138,19 +182,16 @@
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2027-12-31",
             "validFrom": "2026-01-01",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {"@type": "MonetaryAmount", "value": "1000", "currency": "MXN"},
-              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "MX"},
-              "deliveryTime": {"@type": "ShippingDeliveryTime", "businessDays": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]}, "cutoffTime": "18:00:00-06:00", "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 7, "unitCode": "DAY"}}
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "299",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
             },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "MX",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 3,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 30,
+              "unitText": "paquetes"
             }
           }
         },
@@ -160,8 +201,11 @@
           "name": "Tapete Foamy Infantil Grande — 4 Piezas 62×62 cm — 10 mm",
           "description": "Tapete foamy EVA grande reforzado para ludotecas y salones de fiestas. 4 piezas de 62×62 cm, 10 mm. Cubre 1.5376 m².",
           "sku": "TFB-4-62-10MM",
-          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-4-piezas-62x62.webp",
-          "brand": {"@type": "Brand", "name": "Tapetes Infantiles Mayoreo"},
+          "image": "https://www.tapetesinfantilesmayoreo.com.mx/img/tapete-foamy-4-piezas-62x62-880.webp",
+          "brand": {
+            "@type": "Brand",
+            "name": "Tapetes Infantiles Mayoreo"
+          },
           "offers": {
             "@type": "Offer",
             "price": "399",
@@ -169,19 +213,16 @@
             "availability": "https://schema.org/InStock",
             "priceValidUntil": "2027-12-31",
             "validFrom": "2026-01-01",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {"@type": "MonetaryAmount", "value": "1000", "currency": "MXN"},
-              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "MX"},
-              "deliveryTime": {"@type": "ShippingDeliveryTime", "businessDays": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"]}, "cutoffTime": "18:00:00-06:00", "handlingTime": {"@type": "QuantitativeValue", "minValue": 1, "maxValue": 2, "unitCode": "DAY"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 3, "maxValue": 7, "unitCode": "DAY"}}
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "399",
+              "priceCurrency": "MXN",
+              "valueAddedTaxIncluded": false
             },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "MX",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 3,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 30,
+              "unitText": "paquetes"
             }
           }
         }
@@ -190,14 +231,118 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"¿Cuánto cuesta el tapete de foamy para bebé gateo al mayoreo?","acceptedAnswer":{"@type":"Answer","text":"El tapete de foamy para bebé gateo al mayoreo cuesta $299 MXN + IVA por paquete en grosor 8 mm, y $399 MXN + IVA en grosor 10 mm. El pedido mínimo es 30 paquetes en total. El paquete de 16 piezas 32×32 cm cubre 1.6384 m² y el de 4 piezas 62×62 cm cubre 1.5376 m²."}},
-        {"@type":"Question","name":"¿Cuánto cubre un tapete foamy rompecabezas para bebé?","acceptedAnswer":{"@type":"Answer","text":"El tapete foamy rompecabezas de 16 piezas de 32×32 cm cubre 1.6384 m² por paquete. El formato de 4 piezas de 62×62 cm cubre 1.5376 m² por paquete. Para una zona de gateo de 6 m² necesitas aproximadamente 4 paquetes del formato 32×32 cm."}},
-        {"@type":"Question","name":"¿El tapete fomi para bebé es seguro?","acceptedAnswer":{"@type":"Answer","text":"Sí. El tapete fomi para bebé está fabricado en material EVA no tóxico, libre de BPA y ftalatos. Es el estándar en guarderías certificadas en México. Superficie antiderrapante en ambas caras para estabilidad durante el gateo y los primeros pasos."}},
-        {"@type":"Question","name":"¿Cuántos tapetes foamy necesita una guardería?","acceptedAnswer":{"@type":"Answer","text":"Divide los m² del área de juego entre 1.6384 (formato 32×32 cm) o 1.5376 (formato 62×62 cm). Para un área de 20 m² necesitas ~13 paquetes del formato 32×32 cm. El mínimo de compra es 30 paquetes."}},
-        {"@type":"Question","name":"¿Se puede cortar el tapete de foamy rompecabezas?","acceptedAnswer":{"@type":"Answer","text":"Sí. El tapete foamy EVA se corta fácilmente con cúter o navaja. Puedes ajustar las piezas a esquinas, columnas o espacios irregulares sin herramientas especiales."}},
-        {"@type":"Question","name":"¿Cuál es la diferencia entre tapete foamy 8 mm y 10 mm para bebé?","acceptedAnswer":{"@type":"Answer","text":"El tapete foamy de 8 mm es el estándar para gateo y guarderías. El de 10 mm ofrece mayor acolchado para zonas de juego activo, salones de fiestas o pisos de concreto. Precio: $299 (8mm) vs $399 (10mm) + IVA por paquete."}},
-        {"@type":"Question","name":"¿Hacen envíos de tapetes foamy para bebé a toda la República?","acceptedAnswer":{"@type":"Answer","text":"Sí, enviamos a toda la República. CDMX desde $1,000 MXN por tarima. Interior desde $1,600 MXN. Entrega 3–7 días hábiles."}},
-        {"@type":"Question","name":"¿Son proveedores directos de tapetes foamy o intermediarios?","acceptedAnswer":{"@type":"Answer","text":"Somos proveedor y distribuidor directo de tapetes foamy para bebés, guarderías y ludotecas en México. Vendemos al mayoreo desde 30 paquetes con precio de fabricante, sin intermediarios, con factura fiscal CFDI."}}
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el tapete foamy para bebé gateo al mayoreo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El tapete foamy para bebé gateo al mayoreo cuesta $299 MXN + IVA por paquete en grosor 8 mm, y $399 MXN + IVA en grosor 10 mm reforzado. El pedido mínimo es 30 paquetes. Somos proveedor directo sin intermediarios — precio de fabricante."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tienen tapete foamy 60x60?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Nuestra pieza grande mide 62 × 62 cm; es la que en tiendas se vende como 60x60. Viene en paquetes de 4 piezas (1.54 m²), en 8 mm o 10 mm (1 cm) de grosor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el tapete foamy por metro cuadrado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En 32×32 cm de 8 mm sale en ≈ $183 por m² + IVA; en 62×62 cm de 8 mm, ≈ $194. En 10 mm, ≈ $244 y ≈ $259 por m² + IVA. El flete se cotiza aparte según el destino."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Foamy, fomi y foami son lo mismo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Son formas de escribir el mismo material: espuma EVA. También se le dice goma EVA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tienen colores pastel o neutros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Manejamos 21 colores: además de los colores vivos hay tonos pastel y neutros. Pide la carta de colores por WhatsApp y te decimos qué hay en existencia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cubre el tapete foamy rompecabezas para bebé?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El tapete foamy rompecabezas de 16 piezas de 32×32 cm cubre 1.6384 m² por paquete. El de 4 piezas de 62×62 cm cubre 1.5376 m². Para una zona de gateo de 6 m² necesitas ~4 paquetes del formato 32×32 cm. Usa nuestra calculadora para saber exactamente cuántos necesitas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El tapete fomi para bebé es seguro y no tóxico?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El tapete fomi está fabricado en EVA (Etileno-Vinilo-Acetato) no tóxico, libre de BPA y ftalatos. Es el estándar en guarderías certificadas en México. Superficie antiderrapante en ambas caras para estabilidad durante el gateo y los primeros pasos desde los 0 meses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuántos tapetes foamy necesita una guardería?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Divide los m² del área de juego entre 1.6384 (formato 32×32 cm). Para un área de 20 m² necesitas ~13 paquetes. El mínimo de compra es 30 paquetes — cubre varias zonas de tu guardería o combina formatos para llegar al mínimo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede cortar el tapete foamy EVA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. El tapete foamy EVA se corta fácilmente con cúter o navaja. Puedes ajustar las piezas del tapete rompecabezas a esquinas, columnas o espacios irregulares sin herramientas especiales. Ideal para guarderías y ludotecas con espacios no rectangulares."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es la diferencia entre tapete foamy 8 mm y 10 mm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El tapete foamy de 8 mm es el estándar para bebé gateo, guarderías y ludotecas. El de 10 mm ofrece mayor acolchado y es ideal para salones de fiestas, zonas de juego muy activo o pisos de concreto duro. Precio: $299 (8mm) vs $399 (10mm) + IVA por paquete."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Son proveedores directos de tapete foamy o intermediarios?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Somos proveedor y distribuidor directo de tapete foamy para bebés, guarderías y ludotecas en México. Vendemos tapete fomi y tapete EVA al mayoreo desde 30 paquetes con precio de fabricante, sin intermediarios y con factura fiscal CFDI incluida."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen envíos de tapete foamy a toda la República?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, enviamos tapete foamy a toda la República Mexicana. CDMX y Área Metro desde $1,000 MXN por tarima. Interior desde $1,600 MXN. Entrega: 3 a 7 días hábiles si el color está en existencia; si se fabrica sobre pedido, 7 a 12 días hábiles. Pregúntanos qué hay en existencia. El costo exacto del flete se confirma antes de tu pedido."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Emiten factura fiscal para guarderías y escuelas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, emitimos CFDI para todos los pedidos de mayoreo de tapete foamy. Aceptamos órdenes de compra institucionales para guarderías con registro, escuelas y organismos educativos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo pedir muestra de tapete foamy antes del pedido mayor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Escríbenos por WhatsApp y coordinamos el envío de una muestra de tapete foamy para que evalúes el material, color y grosor antes de comprometerte con el pedido mínimo de 30 paquetes. También puedes verlas en nuestra bodega en Cuajimalpa, CDMX, de lunes a viernes de 9:00 a 18:00."
+          }
+        }
       ]
     }
   ]
@@ -246,7 +391,7 @@ nav{background:var(--bl);border-bottom:3px solid var(--hero);position:sticky;top
 .nl a:hover{background:var(--gf);color:var(--hero)}
 .ncta{background:var(--ve)!important;color:var(--bl)!important;padding:7px 14px!important;border-radius:50px!important}
 .ncta:hover{background:var(--ved)!important}
-.ham{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.ham{display:none;background:none;border:none;cursor:pointer;padding:10px;min-width:44px;min-height:44px}
 .ham span{display:block;width:22px;height:2px;background:var(--hero);margin:5px 0;border-radius:2px}
 @media(max-width:720px){
   .nl{display:none;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:var(--bl);border-bottom:3px solid var(--coral);padding:12px 20px;gap:2px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
@@ -310,8 +455,6 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .nimg img{width:100%;height:100%;object-fit:cover;display:block}
 .nbadge{position:absolute;top:14px;left:14px;background:var(--hero);color:var(--bl);font-size:11px;font-weight:800;padding:4px 12px;border-radius:50px;z-index:1}
 .nimg .ph-ph{color:var(--ts);background:var(--gm)}
-.ntags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
-.ntag{font-size:11px;font-weight:700;color:var(--hero);background:#EAF4FF;padding:3px 10px;border-radius:50px;border:1px solid #C5DFF5}
 .nicho h2{font-size:clamp(1.3rem,2.8vw,1.8rem)}
 .nicho .sd{margin-bottom:18px}
 .nlist{list-style:none;margin:14px 0 22px;display:flex;flex-direction:column;gap:10px}
@@ -329,12 +472,15 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .nd h2{color:var(--bl)}
 .nd h2 em{background:var(--am);color:var(--hero)}
 .nd .sd{color:rgba(255,255,255,.85)}
-.nd .ntag{background:rgba(255,214,10,.15);color:var(--am);border-color:rgba(255,214,10,.3)}
 .nd .nlist li{color:rgba(255,255,255,.88)}
 .nd .ns{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.1)}
 .nd .ns-n{color:var(--bl)}
 .nd .ns-l{color:rgba(255,255,255,.75)}
 .nd .ck{background:var(--am);color:var(--hero)}
+.inst{background:#EAF4FF;border-top:1px solid var(--gm);border-bottom:1px solid var(--gm);padding:36px 24px}
+.inst-i{max-width:920px;margin:0 auto}
+.inst h2{font-size:clamp(1.2rem,2.6vw,1.5rem);margin-bottom:8px}
+.inst p{font-size:14px;color:#4A5568;line-height:1.7;margin-bottom:16px;max-width:760px}
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:24px}
 .fg{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:18px 14px;text-align:center}
 .fg-i{font-size:24px;margin-bottom:8px}
@@ -347,11 +493,15 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .fc{background:var(--bl);border:2px solid var(--gm);border-radius:var(--rg);overflow:hidden;transition:border-color .2s,transform .2s;box-shadow:0 2px 8px rgba(27,45,91,.05)}
 .fc:hover{border-color:var(--hero);transform:translateY(-3px);box-shadow:0 8px 24px rgba(91,138,199,.18)}
 .fcimg{position:relative;background:var(--gm);height:210px;overflow:hidden}
-.fcimg img{width:100%;height:100%;object-fit:cover;display:block}
+.fcimg img{width:100%;height:100%;object-fit:contain;display:block}
 .fcbadge{position:absolute;top:12px;right:12px;background:var(--hero);color:var(--bl);font-size:11px;font-weight:800;padding:3px 10px;border-radius:50px}
 .fcb{padding:22px}
 .fcn{font-size:1.05rem;font-weight:900;color:var(--hero);margin-bottom:8px}
 .fcs{font-size:13px;color:var(--ts);line-height:1.9;margin-bottom:16px}
+.fcs span{display:block}
+.pm2{font-size:12px;color:var(--ts);margin-top:8px}
+.fcwa{display:inline-flex;align-items:center;gap:8px;margin-top:14px;background:var(--ve);color:var(--bl);font-weight:800;font-size:13px;padding:10px 18px;border-radius:50px;text-decoration:none}
+.fcwa:hover{background:var(--ved)}
 .fcs strong{color:var(--hero)}
 .pvw{display:flex;gap:10px;flex-wrap:wrap}
 .pv{border:1.5px solid var(--gm);border-radius:var(--r);padding:10px 14px;text-align:center;min-width:95px}
@@ -420,15 +570,6 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .pt2{font-size:14px;font-weight:800;color:var(--hero);margin-bottom:5px}
 .pd{font-size:12px;color:var(--ts);line-height:1.5}
 
-/* TESTIMONIOS */
-#testimonios{background:var(--gf)}
-.tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.tc{background:var(--bl);border:2px solid var(--gm);border-radius:var(--rg);padding:22px;box-shadow:0 2px 8px rgba(27,45,91,.05)}
-.tc-s{color:#FFB347;font-size:16px;margin-bottom:10px}
-.tc-t{font-size:13px;color:var(--ts);line-height:1.6;margin-bottom:12px;font-style:italic}
-.tc-a{font-size:12px;font-weight:800;color:var(--hero)}
-.tc-c{font-size:11px;color:var(--ts)}
-
 /* FAQ */
 #faq{background:var(--bl)}
 .fl{display:flex;flex-direction:column;gap:2px}
@@ -456,7 +597,7 @@ hr.dv{border:none;border-top:1.5px solid var(--gm);margin:0}
 .ft{font-size:16px;font-weight:900;color:var(--hero);margin-bottom:14px}
 .fg2{margin-bottom:11px}
 .fg2 label{display:block;font-size:12px;font-weight:800;color:var(--hero);margin-bottom:4px}
-.fg2 input,.fg2 select{width:100%;border:2px solid var(--gm);border-radius:var(--r);padding:10px 12px;font-size:14px;font-family:'Nunito',sans-serif;color:var(--hero);transition:border-color .2s;background:var(--bl)}
+.fg2 input,.fg2 select{width:100%;border:2px solid var(--gm);border-radius:var(--r);padding:10px 12px;font-size:16px;font-family:'Nunito',sans-serif;color:var(--hero);transition:border-color .2s;background:var(--bl)}
 .fg2 input:focus,.fg2 select:focus{outline:none;border-color:var(--hero)}
 .fg2g{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 @media(max-width:400px){.fg2g{grid-template-columns:1fr}}
@@ -477,7 +618,6 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 .fcol a{display:block;font-size:12px;color:rgba(255,255,255,.72);text-decoration:none;margin-bottom:6px;transition:color .15s}
 .fcol a:hover{color:var(--turq)}
 .fbot{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:11px;text-align:center;line-height:1.8;max-width:920px;margin:0 auto;color:rgba(255,255,255,.65)}
-.fkw{font-size:10px;color:rgba(255,255,255,.15);margin-top:8px;line-height:1.6}
 
 /* WA FLOTANTE */
 .waf{position:fixed;bottom:22px;right:22px;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:8px}
@@ -494,18 +634,18 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 <!-- End Google Tag Manager (noscript) -->
 <!-- TOPBAR -->
 <div class="topbar">
-  🍼 Tapete foamy bebé gateo al mayoreo · CDMX $1,000 · República $1,600 · Proveedor directo · Factura CFDI &nbsp;·&nbsp;
-  <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20de%20foamy%20para%20beb%C3%A9s%20al%20mayoreo" target="_blank" rel="noopener noreferrer">Cotizar ahora →</a>
+  Envío a toda la República · Bodega en Cuajimalpa · Factura CFDI &nbsp;·&nbsp;
+  <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20infantiles%20al%20mayoreo" target="_blank" rel="noopener noreferrer">Cotizar ahora →</a>
 </div>
 
 <!-- NAV -->
 <nav aria-label="Navegación principal">
   <div class="navi">
     <a href="#" class="logo" aria-label="Tapetes Infantiles Mayoreo">tapetes<span>infantiles</span>mayoreo</a>
-    <button class="ham" aria-label="Abrir menú" onclick="document.querySelector('.nl').classList.toggle('open')">
+    <button class="ham" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
       <span></span><span></span><span></span>
     </button>
-    <div class="nl">
+    <div class="nl" id="menu-principal">
       <a href="#bebes">Bebés</a>
       <a href="#guarderia">Guarderías</a>
       <a href="#ludoteca">Ludotecas</a>
@@ -526,7 +666,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     <div>
       <div class="hb">🧩 Tapete EVA rompecabezas · Mayoreo · Proveedor directo · México</div>
       <h1>Tapetes de Foamy para Bebés al Mayoreo — <em>Proveedor Directo en México</em></h1>
-      <p class="hs">Tapete EVA tipo rompecabezas para gateo, guarderías, ludotecas, escuelas y distribuidores. 20 colores y precios por volumen. Material no tóxico, antiderrapante, fácil de limpiar.</p>
+      <p class="hs">Tapete EVA tipo rompecabezas para gateo, guarderías, ludotecas, escuelas y distribuidores. 21 colores (vivos, pastel y neutros) y precios por volumen. Material no tóxico, antiderrapante, fácil de limpiar.</p>
 
       <div class="ph-wrap">
         <div class="ph"><div class="ph-mm">8 mm estándar</div><div class="ph-pr">$299</div><div class="ph-iv">+ IVA / paquete</div></div>
@@ -534,14 +674,14 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       </div>
       <p class="hmin">Mínimo <strong>30 paquetes</strong> · Combina formatos · 100+ paquetes: precio especial</p>
 
-      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20de%20foamy%20para%20beb%C3%A9s%20al%20mayoreo.%20%C2%BFPueden%20enviarme%20precios%20y%20disponibilidad%3F" class="bwa" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20beb%C3%A9%20al%20mayoreo" class="bwa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar tapetes de foamy
       </a>
 
       <div class="trust">
         <div class="ti"><div class="td"></div>Proveedor directo</div>
-        <div class="ti"><div class="td"></div>20 colores disponibles</div>
+        <div class="ti"><div class="td"></div>21 colores, incluidos pastel</div>
         <div class="ti"><div class="td"></div>Envío 32 estados</div>
         <div class="ti"><div class="td"></div>Factura CFDI</div>
         <div class="ti"><div class="td"></div>EVA no tóxico</div>
@@ -550,7 +690,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 
     <div class="himg">
       <!-- FOTO 1: og-tapetes-foamy-bebes-mayoreo.jpg — bebés jugando en tapetes coloridos, foto alegre y real -->
-      <img src="img/og-tapetes-foamy-bebes-mayoreo.webp" fetchpriority="high" loading="eager" width="600" height="600"
+      <img src="img/og-tapetes-foamy-bebes-mayoreo-880.webp" fetchpriority="high" loading="eager" width="880" height="880"
            alt="Tapete foamy para bebé gateo colorido tipo rompecabezas al mayoreo en México guardería ludoteca"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\'><div class=\'ph-r\'></div>img/og-tapetes-foamy-bebes-mayoreo.jpg</div>'">
     </div>
@@ -569,6 +709,18 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   </div>
 </div>
 
+<!-- INSTITUCIONES -->
+<section class="inst" id="instituciones" aria-label="Compras institucionales">
+  <div class="inst-i">
+    <h2>¿Compras para una institución?</h2>
+    <p>Te mandamos cotización formal en PDF con RFC y vigencia, factura CFDI, carta de fabricante y los documentos para darnos de alta como proveedor. Atendemos guarderías, estancias infantiles, kinder y preescolar, consultorios de terapia y asociaciones civiles. Puedes visitar la bodega en Cuajimalpa para ver colores y muestras.</p>
+    <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20una%20instituci%C3%B3n%20y%20necesito%20cotizaci%C3%B3n%20formal" class="bwa" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Solicitar cotización formal
+    </a>
+  </div>
+</section>
+
 <hr class="dv">
 
 <!-- ═══ NICHO 1: BEBÉS ═══ -->
@@ -576,33 +728,26 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 2: bebe-gateando-tapete-foamy.jpg — bebé gateando, foto real y alegre -->
-      <img loading="lazy" src="img/bebe-gateando-tapete-foamy.webp"
+      <img loading="lazy" src="img/bebe-gateando-tapete-foamy-880.webp"
            alt="Tapete foamy para bebé gateo EVA rompecabezas colorido antiderrapante no tóxico"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/bebe-gateando-tapete-foamy.jpg</div>'">
-      <span class="nbadge">👶 Bebés y gateo</span>
+      <span class="nbadge">👶 Bebés</span>
     </div>
     <div>
-      <div class="ntags">
-        <span class="ntag">tapete foamy bebé gateo</span>
-        <span class="ntag">tapete fomi bebé</span>
-        <span class="ntag">tapete EVA bebé</span>
-        <span class="ntag">tapete didáctico bebé</span>
-        <span class="ntag">tapete rompecabezas bebé</span>
-      </div>
-      <div class="ey">Tapete foamy para bebé gateo</div>
+      <div class="ey">Bebés y gateo</div>
       <h2>Tapete foamy bebé gateo — <em>seguro, colorido y al mayoreo</em></h2>
-      <p class="sd">El tapete fomi para bebé es el favorito de guarderías, tiendas de bebés y mamás de toda la República. No tóxico, antiderrapante, fácil de limpiar. Los colores vivos estimulan el desarrollo visual desde el primer día de gateo.</p>
+      <p class="sd">El tapete fomi para bebé es el favorito de guarderías, tiendas de bebés y mamás de toda la República. No tóxico, antiderrapante, fácil de limpiar. Colores vivos o pastel: muchas guarderías piden tonos suaves para las salas de bebés.</p>
 
       <ul class="nlist">
         <li><div class="ck">✓</div>Material EVA no tóxico, libre de BPA y ftalatos — apto desde 0 meses</li>
         <li><div class="ck">✓</div>Antiderrapante en ambas caras — no se desliza en pisos lisos</li>
         <li><div class="ck">✓</div>Amortigua caídas durante el gateo y los primeros pasos</li>
         <li><div class="ck">✓</div>Limpieza con agua, jabón o desinfectante — impermeable</li>
-        <li><div class="ck">✓</div>20 colores vivos que estimulan el desarrollo visual y cognitivo</li>
+        <li><div class="ck">✓</div>21 colores: vivos, pastel y neutros</li>
         <li><div class="ck">✓</div>Tapete foamy rompecabezas: encaja sin pegamento, sin herramientas</li>
       </ul>
 
-      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20para%20beb%C3%A9%20gateo%20al%20mayoreo" class="bwa" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20gateo%20de%20beb%C3%A9" class="bwa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar tapete foamy bebé
       </a>
@@ -617,25 +762,19 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni rev">
     <div class="nimg">
       <!-- FOTO 3: tapete-foamy-guarderia-area-juego.jpg — área de guardería con tapetes instalados -->
-      <img loading="lazy" src="img/tapete-foamy-guarderia-area-juego.webp"
+      <img loading="lazy" src="img/tapete-foamy-guarderia-area-juego-880.webp"
            alt="Tapete foamy para guardería área de juego bebés niños proveedor mayoreo México"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-guarderia-area-juego.jpg</div>'">
       <span class="nbadge">🍼 Guarderías</span>
     </div>
     <div>
-      <div class="ntags">
-        <span class="ntag">tapete foamy guardería</span>
-        <span class="ntag">piso foamy guardería mayoreo</span>
-        <span class="ntag">tapete fomi guardería</span>
-        <span class="ntag">tapete EVA guardería infantil</span>
-      </div>
-      <div class="ey">Tapete foamy para guarderías</div>
-      <h2>Tapete foamy guardería — <em>proveedor directo mayoreo</em></h2>
+      <div class="ey">Guarderías y estancias</div>
+      <h2>Para guarderías — <em>proveedor directo al mayoreo</em></h2>
       <p class="sd">Somos proveedor directo de tapete foamy para guarderías y estancias infantiles en toda la República. El tapete fomi EVA es el estándar en guarderías certificadas: no tóxico, antiderrapante y fácil de desinfectar.</p>
 
       <div class="nstats">
         <div class="ns"><div class="ns-n">1.64</div><div class="ns-l">m² por paquete<br>(32×32 cm)</div></div>
-        <div class="ns"><div class="ns-n">20</div><div class="ns-l">colores disponibles</div></div>
+        <div class="ns"><div class="ns-n">21</div><div class="ns-l">colores, con pastel</div></div>
         <div class="ns"><div class="ns-n">8/10</div><div class="ns-l">mm grosor a elegir</div></div>
       </div>
 
@@ -649,7 +788,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 
       <p style="font-size:13px;color:var(--ts);margin-bottom:20px;line-height:1.6">Para cubrir 20 m² con el formato 32×32 cm necesitas ~13 paquetes. Mínimo 30 paquetes por pedido.</p>
 
-      <a href="https://wa.me/525525897917?text=Hola%2C%20busco%20proveedor%20de%20tapete%20foamy%20para%20guarder%C3%ADa%20al%20mayoreo" class="bwa" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20guarder%C3%ADa" class="bwa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar para guardería
       </a>
@@ -664,20 +803,14 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 4: tapete-foamy-ludoteca.jpg — ludoteca con piso foamy colorido -->
-      <img loading="lazy" src="img/tapete-foamy-ludoteca.webp"
+      <img loading="lazy" src="img/tapete-foamy-ludoteca-880.webp"
            alt="Tapete foamy para ludoteca salón de juegos infantiles tipo rompecabezas EVA mayoreo"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\'><div class=\'ph-r\'></div>img/tapete-foamy-ludoteca.jpg</div>'">
       <span class="nbadge">🎡 Ludotecas</span>
     </div>
     <div>
-      <div class="ntags">
-        <span class="ntag">tapete foamy ludoteca</span>
-        <span class="ntag">piso foamy ludoteca mayoreo</span>
-        <span class="ntag">tapete fomi ludoteca</span>
-        <span class="ntag">tapete EVA ludoteca infantil</span>
-      </div>
-      <div class="ey">Tapete foamy para ludotecas</div>
-      <h2>Tapete foamy ludoteca — <em>cubre más, gasta menos</em></h2>
+      <div class="ey">Ludotecas</div>
+      <h2>Para ludotecas — <em>cubre más, gasta menos</em></h2>
       <p class="sd">Las ludotecas necesitan cubrir grandes superficies con tapete foamy rompecabezas rápido y económico. Se instala en minutos, aguanta el uso rudo de niños y se amplía cuando crece tu ludoteca.</p>
 
       <div class="feat-grid">
@@ -688,7 +821,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       </div>
 
       <div style="margin-top:24px">
-        <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20para%20ludoteca%20al%20mayoreo" class="bwa" target="_blank" rel="noopener">
+        <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20ludoteca" class="bwa" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
           Cotizar para ludoteca
         </a>
@@ -704,31 +837,25 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni rev">
     <div class="nimg">
       <!-- FOTO 5: tapete-foamy-salon-fiestas.jpg — zona Soft Play o área acolchada de salón de fiestas -->
-      <img loading="lazy" src="img/tapete-foamy-salon-fiestas.webp"
+      <img loading="lazy" src="img/tapete-foamy-salon-fiestas-880.webp"
            alt="Tapete foamy para salón de fiestas infantiles zona soft play área acolchada rompecabezas"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-salon-fiestas.jpg</div>'">
       <span class="nbadge">🎉 Salones de Fiestas</span>
     </div>
     <div>
-      <div class="ntags">
-        <span class="ntag">tapete foamy salón fiestas infantiles</span>
-        <span class="ntag">piso soft play foamy</span>
-        <span class="ntag">tapete fomi fiesta infantil</span>
-        <span class="ntag">tapete EVA área infantil</span>
-      </div>
-      <div class="ey">Tapete foamy para salones de fiestas</div>
-      <h2>Tapete foamy salón de fiestas — <em>Soft Play económico</em></h2>
+      <div class="ey">Salones de fiestas</div>
+      <h2>Para salones de fiestas — <em>Soft Play económico</em></h2>
       <p class="sd">Zona Soft Play y área acolchada sin gran inversión. El tapete foamy EVA rompecabezas se arma para cada evento, se guarda en poco espacio y protege a los niños durante toda la celebración.</p>
 
       <ul class="nlist">
         <li><div class="ck">✓</div>Zona Soft Play sin estructuras fijas — arma y guarda en minutos</li>
         <li><div class="ck">✓</div>Grosor 10 mm recomendado para saltos y juego activo</li>
-        <li><div class="ck">✓</div>20 colores para personalizar según la temática de cada fiesta</li>
+        <li><div class="ck">✓</div>21 colores para personalizar según la temática de cada fiesta</li>
         <li><div class="ck">✓</div>Limpieza entre eventos — resistente a derrames y manchas</li>
         <li><div class="ck">✓</div>Tapete foamy rompecabezas: fácil de cortar a medida con cúter</li>
       </ul>
 
-      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20para%20sal%C3%B3n%20de%20fiestas%20infantiles%20al%20mayoreo" class="bwa" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20sal%C3%B3n%20de%20fiestas" class="bwa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar para salón de fiestas
       </a>
@@ -743,31 +870,25 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   <div class="ni">
     <div class="nimg">
       <!-- FOTO 6: tapete-foamy-escuela-preescolar.jpg — área de actividades en piso de preescolar -->
-      <img loading="lazy" src="img/tapete-foamy-escuela-preescolar.webp"
+      <img loading="lazy" src="img/tapete-foamy-escuela-preescolar-880.webp"
            alt="Tapete foamy didáctico para escuela preescolar zona actividades niños rompecabezas EVA"
            onerror="this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'background:var(--gm);color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/tapete-foamy-escuela-preescolar.jpg</div>'">
       <span class="nbadge">🏫 Escuelas</span>
     </div>
     <div>
-      <div class="ntags">
-        <span class="ntag">tapete foamy preescolar</span>
-        <span class="ntag">tapete didáctico infantil mayoreo</span>
-        <span class="ntag">tapete fomi escuela</span>
-        <span class="ntag">tapete EVA didáctico niños</span>
-      </div>
-      <div class="ey">Tapete foamy didáctico para escuelas</div>
-      <h2>Tapete foamy didáctico escuela — <em>seguro y al mayoreo</em></h2>
+      <div class="ey">Kinder, preescolar y escuelas</div>
+      <h2>Para kinder y escuelas — <em>seguro y al mayoreo</em></h2>
       <p class="sd">Preescolares y primarias eligen el tapete foamy EVA para zonas de actividades en piso. Protege de caídas en concreto, es fácil de limpiar y tiene precio institucional con factura.</p>
 
       <ul class="nlist">
         <li><div class="ck">✓</div>Tapete didáctico infantil — ideal para círculos de lectura y motricidad</li>
-        <li><div class="ck">✓</div>20 colores para crear zonas diferenciadas por actividad o grupo</li>
+        <li><div class="ck">✓</div>21 colores para crear zonas diferenciadas por actividad o grupo</li>
         <li><div class="ck">✓</div>Grosor 8 mm cotidiano · 10 mm para zonas de mayor actividad</li>
         <li><div class="ck">✓</div>Factura CFDI — para escuelas privadas y organismos educativos</li>
         <li><div class="ck">✓</div>Mejor época: julio–agosto (regreso a clases)</li>
       </ul>
 
-      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20did%C3%A1cticos%20para%20escuela%20al%20mayoreo%20con%20factura" class="bwa" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20para%20kinder%20o%20preescolar" class="bwa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar para escuela
       </a>
@@ -787,7 +908,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       <div class="fc">
         <div class="fcimg">
           <!-- FOTO 7: tapete-foamy-16-piezas-32x32.jpg — set de 16 piezas mostrando encaje -->
-          <img loading="lazy" src="img/tapete-foamy-16-piezas-32x32.webp"
+          <img loading="lazy" src="img/tapete-foamy-16-piezas-32x32-880.webp"
                alt="Tapete foamy rompecabezas 16 piezas 32x32 cm para bebé gateo guarderías y ludotecas"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ph-ph" style="display:none;height:100%;background:var(--gm);color:var(--ts)">
@@ -796,17 +917,19 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
           <span class="fcbadge">⭐ Más vendido</span>
         </div>
         <div class="fcb">
-          <div class="fcn">Tapete Foamy Bebé — 16 piezas 32×32 cm</div>
+          <div class="fcn">Tapete chico — 16 piezas de 32 × 32 cm (tipo 30×30)</div>
           <div class="fcs">
             <span><strong>Piezas:</strong> 16 por paquete</span>
             <span><strong>Medida:</strong> 32 × 32 cm por pieza</span>
             <span><strong>Cobertura:</strong> 1.6384 m² por paquete</span>
+            <span><strong>Grosor:</strong> 8 mm · 10 mm (1 cm)</span>
             <span><strong>Ideal para:</strong> bebés, guarderías, ludotecas, escuelas</span>
           </div>
           <div class="pvw">
             <div class="pv"><div class="pv-mm">8 mm</div><div class="pv-pr">$299</div><div class="pv-iv">+ IVA / paq</div></div>
             <div class="pv d"><div class="pv-mm">10 mm ⭐</div><div class="pv-pr">$399</div><div class="pv-iv">+ IVA / paq</div></div>
           </div>
+          <p class="pm2">≈ $183 (8 mm) · $244 (10 mm) por m² + IVA</p>
           <div class="cols">
             <div class="cc" style="background:#FF5733"></div><div class="cc" style="background:#3498DB"></div>
             <div class="cc" style="background:#2ECC71"></div><div class="cc" style="background:#F1C40F"></div>
@@ -815,13 +938,14 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
             <div class="cc" style="background:#2C3E50"></div><div class="cc" style="background:#E74C3C"></div>
             <span class="cc-m">+10 más</span>
           </div>
+          <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20el%20tapete%20foamy%20de%2032x32" class="fcwa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Cotizar 32×32</a>
         </div>
       </div>
 
       <div class="fc">
         <div class="fcimg">
           <!-- FOTO 8: tapete-foamy-4-piezas-62x62.jpg — set de 4 piezas grandes -->
-          <img loading="lazy" src="img/tapete-foamy-4-piezas-62x62.webp"
+          <img loading="lazy" src="img/tapete-foamy-4-piezas-62x62-880.webp"
                alt="Tapete foamy grande 4 piezas 62x62 cm rompecabezas para ludotecas y salones de fiestas"
                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="ph-ph" style="display:none;height:100%;background:var(--gm);color:var(--ts)">
@@ -830,17 +954,19 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
           <span class="fcbadge">Formato grande</span>
         </div>
         <div class="fcb">
-          <div class="fcn">Tapete Foamy Grande — 4 piezas 62×62 cm</div>
+          <div class="fcn">Tapete grande — 4 piezas de 62 × 62 cm (tipo 60×60)</div>
           <div class="fcs">
             <span><strong>Piezas:</strong> 4 por paquete</span>
-            <span><strong>Medida:</strong> 62 × 62 cm por pieza</span>
+            <span><strong>Medida:</strong> 62 × 62 cm por pieza (en tiendas se vende como 60x60)</span>
             <span><strong>Cobertura:</strong> 1.5376 m² por paquete</span>
+            <span><strong>Grosor:</strong> 8 mm · 10 mm (1 cm)</span>
             <span><strong>Ideal para:</strong> ludotecas grandes, salones de fiestas, áreas amplias</span>
           </div>
           <div class="pvw">
             <div class="pv"><div class="pv-mm">8 mm</div><div class="pv-pr">$299</div><div class="pv-iv">+ IVA / paq</div></div>
             <div class="pv d"><div class="pv-mm">10 mm ⭐</div><div class="pv-pr">$399</div><div class="pv-iv">+ IVA / paq</div></div>
           </div>
+          <p class="pm2">≈ $194 (8 mm) · $259 (10 mm) por m² + IVA</p>
           <div class="cols">
             <div class="cc" style="background:#FF5733"></div><div class="cc" style="background:#3498DB"></div>
             <div class="cc" style="background:#2ECC71"></div><div class="cc" style="background:#F1C40F"></div>
@@ -849,6 +975,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
             <div class="cc" style="background:#fff;border-color:#ccc"></div><div class="cc" style="background:#1A1A1A"></div>
             <span class="cc-m">+10 más</span>
           </div>
+          <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20el%20tapete%20foamy%20de%2062x62%20%2860x60%29" class="fcwa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Cotizar 62×62</a>
         </div>
       </div>
     </div>
@@ -864,7 +991,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     <div class="igrid">
       <div class="iimg">
         <!-- FOTO 9: instalacion-tapete-foamy-cuter.jpg — manos armando tapete foamy o cortando con cúter -->
-        <img loading="lazy" src="img/instalacion-tapete-foamy-cuter.webp"
+        <img loading="lazy" src="img/instalacion-tapete-foamy-cuter-880.webp"
              alt="Instalación tapete foamy rompecabezas sin herramientas corte cúter fácil guardería"
              onerror="this.style.display='none';this.parentElement.style.background='var(--gm)';this.parentElement.innerHTML='<div class=\'ph-ph\' style=\'height:100%;color:var(--ts)\'><div class=\'ph-r\' style=\'border-color:var(--ts);opacity:.3\'></div>img/instalacion-tapete-foamy-cuter.jpg</div>'">
       </div>
@@ -890,11 +1017,11 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 <section id="colores">
   <div class="si">
     <div class="ey">Paleta completa</div>
-    <h3>20 colores de tapete foamy — pide el que quieras</h3>
+    <h2>21 colores de tapete foamy, incluidos tonos pastel</h2>
     <p class="sd">Surtidos, un solo color o combinación personalizada. Confirma disponibilidad por WhatsApp.</p>
     <!-- FOTO 10: colores-tapetes-foamy-20.jpg — todos los tapetes en distintos colores juntos -->
-    <img loading="lazy" src="img/colores-tapetes-foamy-20.webp"
-         alt="20 colores disponibles tapete foamy fomi EVA infantil al mayoreo México"
+    <img loading="lazy" src="img/colores-tapetes-foamy-20-880.webp"
+         alt="Colores disponibles de tapete foamy EVA infantil: vivos, pastel y neutros"
          style="width:100%;border-radius:var(--rg);margin-bottom:18px;aspect-ratio:16/5;object-fit:cover;background:var(--gm)"
          onerror="this.style.display='none'">
     <div class="cfull">
@@ -929,7 +1056,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 <section id="calculadora">
   <div class="si">
     <div class="ey">Herramienta rápida</div>
-    <h3>Calculadora de tapete foamy — ¿cuántos paquetes necesitas?</h3>
+    <h3>Calculadora — ¿cuántos paquetes necesitas?</h3>
     <p class="sd" style="margin-bottom:24px">Ingresa las medidas de tu espacio y te decimos cuántos paquetes de tapete foamy pedir. Ideal para guarderías y ludotecas.</p>
     <div class="cbox">
       <div class="crow">
@@ -943,9 +1070,9 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
           <option value="4">4 piezas 62×62 cm — áreas grandes, salones de fiestas (1.5376 m²/paq)</option>
         </select>
       </div>
-      <button class="cbtn" onclick="calcular()">Calcular paquetes de tapete foamy →</button>
+      <button class="cbtn" onclick="calcular()">Calcular paquetes →</button>
       <div class="cres" id="cres">
-        <div class="cr-t">Para cubrir tu área con tapete foamy necesitas:</div>
+        <div class="cr-t">Para cubrir tu área necesitas:</div>
         <div class="cr-n" id="crn">—</div>
         <div class="cr-d" id="crd"></div>
         <a class="cwa" id="crwa" href="#" target="_blank" rel="noopener">
@@ -975,9 +1102,11 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     </div>
     <div class="egrid">
       <div class="ei"><div class="ei-i">🏙️</div><div><div class="ei-t">CDMX y Área Metro</div><div class="ei-d">Desde $1,000 MXN por tarima</div></div></div>
-      <div class="ei"><div class="ei-i">🚚</div><div><div class="ei-t">República Mexicana</div><div class="ei-d">Desde $1,600 MXN · 3–7 días hábiles</div></div></div>
+      <div class="ei"><div class="ei-i">🚚</div><div><div class="ei-t">República Mexicana</div><div class="ei-d">Desde $1,600 MXN por tarima</div></div></div>
+      <div class="ei"><div class="ei-i">📅</div><div><div class="ei-t">Entrega</div><div class="ei-d">3 a 7 días hábiles con existencia · sobre pedido, 7 a 12 días hábiles</div></div></div>
+      <div class="ei"><div class="ei-i">🏬</div><div><div class="ei-t">Bodega en Cuajimalpa, CDMX</div><div class="ei-d">L–V 9:00 a 18:00 · ve colores, pide muestras y recoge tu pedido</div></div></div>
     </div>
-    <p style="font-size:11px;color:var(--ts);margin-top:12px">* Precios en MXN + IVA. Sujeto a disponibilidad. Flete confirmado antes del pedido. Pago por transferencia. Factura CFDI disponible.</p>
+    <p style="font-size:11px;color:var(--ts);margin-top:12px">* Precios en MXN + IVA. Sujeto a disponibilidad. Flete confirmado antes del pedido. Pago por transferencia o tarjeta. Factura CFDI disponible.</p>
   </div>
 </section>
 
@@ -987,41 +1116,14 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 <section id="proceso">
   <div class="si">
     <div class="ey">¿Cómo funciona?</div>
-    <h3>De tu cotización de tapete foamy a tu puerta</h3>
+    <h3>De tu cotización a tu puerta</h3>
     <div class="pasos">
       <div class="paso"><div class="pn">1</div><div class="pt2">Nos escribes</div><div class="pd">WhatsApp o formulario. Respondemos en menos de 2 horas en días hábiles.</div></div>
       <div class="paso"><div class="pn">2</div><div class="pt2">Cotización exacta</div><div class="pd">Precio tapete foamy, colores y flete a tu destino antes de comprometerte.</div></div>
-      <div class="paso"><div class="pn">3</div><div class="pt2">Confirmación</div><div class="pd">Pago por transferencia. Factura CFDI al momento. 50% anticipo en pedidos grandes.</div></div>
-      <div class="paso"><div class="pn">4</div><div class="pt2">Entrega</div><div class="pd">3 a 7 días hábiles a toda la República. Número de guía para rastrear.</div></div>
+      <div class="paso"><div class="pn">3</div><div class="pt2">Confirmación</div><div class="pd">Pago por transferencia o tarjeta. Factura CFDI al momento. 50% anticipo en pedidos grandes.</div></div>
+      <div class="paso"><div class="pn">4</div><div class="pt2">Entrega</div><div class="pd">3 a 7 días hábiles si el color está en existencia; sobre pedido, 7 a 12 días hábiles. Número de guía para rastrear.</div></div>
     </div>
   </div>
-</section>
-
-<hr class="dv">
-
-<!-- TESTIMONIOS -->
-<section id="testimonios">
-  <div class="si">
-    <div class="ey">Lo que dicen nuestros clientes</div>
-    <h3>Lo que dicen nuestros clientes</h3>
-    <div class="tgrid">
-      <!-- Reemplaza con testimonios reales de WhatsApp -->
-      <div class="tc">
-        <div class="tc-s">★★★★★</div>
-        <div class="tc-t">"Pedimos tapetes foamy para nuestra guardería y llegaron perfectos a Monterrey. Los bebés los aman y son facilísimos de limpiar."</div>
-        <div class="tc-a">Guardería Estrellitas</div><div class="tc-c">Monterrey, Nuevo León</div>
-      </div>
-      <div class="tc">
-        <div class="tc-s">★★★★★</div>
-        <div class="tc-t">"Los colores del tapete fomi son vivos y el material muy resistente. Mis clientes los piden seguido. El mejor precio de mayoreo."</div>
-        <div class="tc-a">Distribuidora Didáctica Central</div><div class="tc-c">Ciudad de México</div>
-      </div>
-      <div class="tc">
-        <div class="tc-s">★★★★★</div>
-        <div class="tc-t">"Instalamos el tapete foamy en nuestra ludoteca en menos de una hora. Rompecabezas facilísimo de armar. 100% recomendados."</div>
-        <div class="tc-a">Mundo Lúdico</div><div class="tc-c">Guadalajara, Jalisco</div>
-      </div>
-    </div>
 </section>
 
 <hr class="dv">
@@ -1037,6 +1139,26 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
       <div class="fi">
         <button class="fq" aria-expanded="false">¿Cuánto cuesta el tapete foamy para bebé gateo al mayoreo? <span class="ff">+</span></button>
         <div class="fa">El tapete foamy para bebé gateo al mayoreo cuesta <strong>$299 MXN + IVA</strong> por paquete en grosor 8 mm, y <strong>$399 MXN + IVA</strong> en grosor 10 mm reforzado. El pedido mínimo es 30 paquetes. Somos proveedor directo sin intermediarios — precio de fabricante.</div>
+      </div>
+
+      <div class="fi">
+        <button class="fq" aria-expanded="false">¿Tienen tapete foamy 60x60? <span class="ff">+</span></button>
+        <div class="fa">Sí. Nuestra pieza grande mide <strong>62 × 62 cm</strong>; es la que en tiendas se vende como 60x60. Viene en paquetes de 4 piezas (1.54 m²), en 8 mm o 10 mm (1 cm) de grosor.</div>
+      </div>
+
+      <div class="fi">
+        <button class="fq" aria-expanded="false">¿Cuánto cuesta el tapete foamy por metro cuadrado? <span class="ff">+</span></button>
+        <div class="fa">En 32×32 cm de 8 mm sale en ≈ <strong>$183 por m² + IVA</strong>; en 62×62 cm de 8 mm, ≈ $194. En 10 mm, ≈ $244 y ≈ $259 por m² + IVA. El flete se cotiza aparte según el destino.</div>
+      </div>
+
+      <div class="fi">
+        <button class="fq" aria-expanded="false">¿Foamy, fomi y foami son lo mismo? <span class="ff">+</span></button>
+        <div class="fa">Sí. Son formas de escribir el mismo material: espuma EVA. También se le dice goma EVA.</div>
+      </div>
+
+      <div class="fi">
+        <button class="fq" aria-expanded="false">¿Tienen colores pastel o neutros? <span class="ff">+</span></button>
+        <div class="fa">Sí. Manejamos 21 colores: además de los colores vivos hay tonos pastel y neutros. Pide la carta de colores por WhatsApp y te decimos qué hay en existencia.</div>
       </div>
 
       <div class="fi">
@@ -1071,7 +1193,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 
       <div class="fi">
         <button class="fq" aria-expanded="false">¿Hacen envíos de tapete foamy a toda la República? <span class="ff">+</span></button>
-        <div class="fa">Sí, enviamos tapete foamy a toda la República Mexicana. CDMX y Área Metro desde $1,000 MXN por tarima. Interior desde $1,600 MXN. Entrega 3–7 días hábiles. El costo exacto se confirma antes de tu pedido.</div>
+        <div class="fa">Sí, enviamos tapete foamy a toda la República Mexicana. CDMX y Área Metro desde $1,000 MXN por tarima. Interior desde $1,600 MXN. Entrega: 3 a 7 días hábiles si el color está en existencia; si se fabrica sobre pedido, 7 a 12 días hábiles. Pregúntanos qué hay en existencia. El costo exacto del flete se confirma antes de tu pedido.</div>
       </div>
 
       <div class="fi">
@@ -1081,7 +1203,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 
       <div class="fi">
         <button class="fq" aria-expanded="false">¿Puedo pedir muestra de tapete foamy antes del pedido mayor? <span class="ff">+</span></button>
-        <div class="fa">Sí. Escríbenos por WhatsApp y coordinamos el envío de una muestra de tapete foamy para que evalúes el material, color y grosor antes de comprometerte con el pedido mínimo de 30 paquetes.</div>
+        <div class="fa">Sí. Escríbenos por WhatsApp y coordinamos el envío de una muestra de tapete foamy para que evalúes el material, color y grosor antes de comprometerte con el pedido mínimo de 30 paquetes. También puedes verlas en nuestra bodega en Cuajimalpa, CDMX, de lunes a viernes de 9:00 a 18:00.</div>
       </div>
 
     </div>
@@ -1096,11 +1218,11 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     <div class="cotl">
       <h2>¿Listo para cotizar tapete foamy al mayoreo?</h2>
       <p>Proveedor directo. WhatsApp o formulario. Respondemos en menos de 2 horas con precio, colores y flete.</p>
-      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20para%20beb%C3%A9s%20al%20mayoreo.%20%C2%BFPueden%20enviarme%20precios%2C%20colores%20y%20disponibilidad%3F" class="bwag" target="_blank" rel="noopener">
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20y%20quiero%20una%20cotizaci%C3%B3n" class="bwag" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Cotizar tapete foamy
       </a>
-      <div class="cdatos">📞 55 2589 7917<br>✉️ <a href="mailto:ventas@tapetesinfantilesmayoreo.com.mx" style="color:inherit">✉️ Escribirnos por email</a><br>Lunes a viernes 9–18 h<br>Av. Yucatán 54-16, Roma Nte., CDMX</div>
+      <div class="cdatos">📞 55 2589 7917<br>✉️ <a href="mailto:ventas@tapetesinfantilesmayoreo.com.mx" style="color:inherit">✉️ Escribirnos por email</a><br>Lunes a viernes 9–18 h<br>Av. Yucatán 54-16, Roma Nte., CDMX<br>Bodega en Cuajimalpa, CDMX: ve los colores, pide muestras y recoge tu pedido</div>
     </div>
 
     <div class="fbox">
@@ -1110,19 +1232,11 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
         <div class="fg2"><label for="fn">Nombre *</label><input type="text" id="fn" placeholder="Tu nombre"></div>
       </div>
       <div class="fg2g">
-        <div class="fg2"><label for="ft2">WhatsApp *</label><input type="tel" id="ft2" placeholder="55 0000 0000"></div>
         <div class="fg2"><label for="fc2">Ciudad *</label><input type="text" id="fc2" placeholder="Ciudad de envío"></div>
+        <div class="fg2"><label for="fm2">m² aproximados *</label><input type="number" id="fm2" placeholder="Ej: 20" min="1" step="0.5" inputmode="decimal"></div>
       </div>
       <div class="fg2g">
-        <div class="fg2"><label for="fca">Cantidad estimada *</label>
-          <select id="fca">
-            <option value="">Selecciona</option>
-            <option>30 – 49 paquetes</option>
-            <option>50 – 99 paquetes</option>
-            <option>100 – 299 paquetes</option>
-            <option>300+ paquetes</option>
-          </select>
-        </div>
+        <div class="fg2"><label for="fco">Color(es)</label><input type="text" id="fco" placeholder="Ej: pastel, surtido, gris"></div>
         <div class="fg2"><label for="fg2s">Tipo de negocio *</label>
           <select id="fg2s">
             <option value="">Selecciona</option>
@@ -1130,6 +1244,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
             <option>Ludoteca / Salón de juegos</option>
             <option>Salón de fiestas infantiles</option>
             <option>Escuela / Preescolar</option>
+            <option>Consultorio / Terapia / A.C.</option>
             <option>Tienda / Distribuidor</option>
             <option>Otro</option>
           </select>
@@ -1145,15 +1260,13 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
 </section>
 
 </main>
-</main>
 
-</main>
 <!-- FOOTER -->
 <footer>
   <div class="foi">
     <div>
       <div class="flogo">Tapetes Infantiles Mayoreo</div>
-      <p class="fdesc">Proveedor y distribuidor de tapete foamy para bebé gateo, guarderías, ludotecas y salones de fiestas infantiles al mayoreo en México. Tapete fomi EVA rompecabezas, 20 colores, envío a 32 estados.</p>
+      <p class="fdesc">Proveedor y distribuidor de tapete foamy para bebé gateo, guarderías, ludotecas y salones de fiestas infantiles al mayoreo en México. Tapete fomi EVA rompecabezas, 21 colores incluidos pastel, envío a 32 estados.</p>
       <div class="sellos">
         <span class="sello">Proveedor Directo</span>
         <span class="sello">EVA No Tóxico</span>
@@ -1171,7 +1284,7 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
     </div>
     <div class="fcol">
       <h3>Contacto</h3>
-      <a href="https://wa.me/525525897917" target="_blank" rel="noopener noreferrer">WhatsApp: 55 2589 7917</a>
+      <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy" target="_blank" rel="noopener noreferrer">WhatsApp: 55 2589 7917</a>
       <a href="mailto:ventas@tapetesinfantilesmayoreo.com.mx">✉️ ventas@tapetesinfantilesmayoreo.com.mx</a>
       <a href="#">Av. Yucatán 54-16, Roma Nte., CDMX</a>
       <a href="#precios">Precios tapete foamy</a>
@@ -1182,27 +1295,27 @@ footer{background:var(--hero);color:rgba(255,255,255,.45);padding:40px 24px 28px
   </div>
   <div class="fbot">
     © 2026 Tapetes Infantiles Mayoreo · tapetesinfantilesmayoreo.com.mx · Todos los derechos reservados
-    <div class="fkw">
-      tapete foamy bebé gateo · tapete fomi bebé · tapete EVA rompecabezas · tapete didáctico infantil · tapete foamy guardería · tapete foamy ludoteca · tapete foamy salón fiestas infantiles · tapete foamy preescolar · tapete fomi mayoreo México · proveedor tapetes foamy · tapete foamy 32x32 · tapete foamy 62x62 · tapetes infantiles mayoreo · piso foamy bebé · tapete EVA infantil mayoreo
-    </div>
   </div>
 </footer>
 
 <!-- WA FLOTANTE -->
 <div class="waf">
   <div class="wab" id="wab">Cotizar tapete foamy bebé 🧩</div>
-  <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesan%20tapetes%20foamy%20para%20beb%C3%A9s%20al%20mayoreo" class="wabtn" target="_blank" rel="noopener" aria-label="Cotizar tapete foamy por WhatsApp">
+  <a href="https://wa.me/525525897917?text=Hola%2C%20me%20interesa%20comprar%20tapetes%20foamy%20al%20mayoreo" class="wabtn" target="_blank" rel="noopener" aria-label="Cotizar tapete foamy por WhatsApp">
     <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.53768h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
 
 <script>
 // Hamburger
-document.querySelector('.ham').addEventListener('click',function(){
-  document.querySelector('.nl').classList.toggle('open');
+const ham=document.querySelector('.ham'),nl=document.querySelector('.nl');
+ham.addEventListener('click',function(){
+  const abierto=nl.classList.toggle('open');
+  ham.setAttribute('aria-expanded',abierto?'true':'false');
+  ham.setAttribute('aria-label',abierto?'Cerrar menú':'Abrir menú');
 });
 document.querySelectorAll('.nl a').forEach(a=>{
-  a.addEventListener('click',()=>document.querySelector('.nl').classList.remove('open'));
+  a.addEventListener('click',()=>{nl.classList.remove('open');ham.setAttribute('aria-expanded','false');ham.setAttribute('aria-label','Abrir menú');});
 });
 
 // FAQ
@@ -1231,7 +1344,7 @@ function calcular(){
   const paqR=Math.max(paq,30);
   const p8=paqR*299, p10=paqR*399;
   const fmt=f==='16'?'16 piezas 32×32 cm (1.6384 m²/paq)':'4 piezas 62×62 cm (1.5376 m²/paq)';
-  document.getElementById('crn').textContent=paqR+' paquetes de tapete foamy';
+  document.getElementById('crn').textContent=paqR+' paquetes';
   document.getElementById('crd').innerHTML=
     `Para cubrir ${area.toFixed(2)} m² (${l}×${a} m), formato ${fmt}.<br>`+
     (paq<30?'Mínimo de compra: 30 paquetes.<br>':'')+
@@ -1245,15 +1358,15 @@ function calcular(){
 function enviarForm(){
   const e=document.getElementById('fe').value;
   const n=document.getElementById('fn').value;
-  const t=document.getElementById('ft2').value;
   const c=document.getElementById('fc2').value;
-  const ca=document.getElementById('fca').value;
+  const m2=document.getElementById('fm2').value;
+  const co=document.getElementById('fco').value;
   const g=document.getElementById('fg2s').value;
-  if(!e||!n||!t||!c||!ca||!g){alert('Por favor completa todos los campos');return;}
+  if(!e||!n||!c||!m2||!g){alert('Por favor completa los campos con *');return;}
   const msg=encodeURIComponent(
-    `Hola, les escribo para cotizar tapete foamy al mayoreo.\n\n`+
-    `🏢 Empresa: ${e}\n👤 Contacto: ${n}\n📞 Tel: ${t}\n📍 Ciudad: ${c}\n`+
-    `📦 Cantidad: ${ca}\n🏪 Negocio: ${g}\n\n¿Pueden enviarme precios y disponibilidad?`
+    `Hola, me interesa comprar tapetes foamy al mayoreo.\n\n`+
+    `🏢 Empresa: ${e}\n👤 Contacto: ${n}\n📍 Ciudad: ${c}\n`+
+    `📐 Área: ${m2} m²\n🎨 Color: ${co||'por definir'}\n🏪 Negocio: ${g}\n\n¿Pueden enviarme precio y disponibilidad?`
   );
   window.open(`https://wa.me/525525897917?text=${msg}`,'_blank');
 }
