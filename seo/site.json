@@ -17,26 +17,42 @@
     "language": "Spanish"
   },
   "business": "YESH MARKET (CDMX)",
-  "product": "Tapete de foamy EVA para bebé y guarderías al mayoreo (16 piezas 32×32 o 4 piezas 62×62, 8 o 10 mm, 20 colores; mínimo 30 paquetes)",
+  "product": "Tapete de foamy EVA para bebé y guarderías al mayoreo (16 piezas 32×32 o 4 piezas 62×62 —el «60x60»—, 8 o 10 mm, 21 colores incluidos pastel; mínimo 30 paquetes)",
   "audience": [
     "guarderías",
     "estancias infantiles",
+    "kinder y preescolar",
     "ludotecas",
     "salones de fiestas infantiles",
-    "preescolares",
-    "jugueterías",
+    "consultorios de terapia y asociaciones civiles",
     "distribuidores"
   ],
   "primary_keywords": [
     "tapete foamy bebe",
-    "tapete de foamy para bebe mayoreo",
-    "tapete fomi bebe",
+    "tapete foamy 60x60",
     "tapete foamy guarderia",
-    "tapete eva rompecabezas bebe",
+    "tapete foamy precio",
     "tapete foamy mayoreo",
-    "tapetes infantiles mayoreo",
-    "tapete foamy precio"
+    "tapete fomi bebe",
+    "tapete foamy colores pastel",
+    "tapete foamy por metro",
+    "tapete foamy kinder",
+    "tapetes infantiles mayoreo"
   ],
   "conversion": "contacto por WhatsApp; precio por paquete publicado; pedido mínimo 30 paquetes",
-  "pages": "index.html (landing única), privacidad.html, terminos.html"
+  "pages": "index.html (landing única), privacidad.html, terminos.html",
+  "secondary_keywords": [
+    "tapete foamy preescolar",
+    "tapete foamy 1 cm",
+    "tapete foamy 32x32",
+    "tapete foami",
+    "tapete foamy ludoteca"
+  ],
+  "avoid_keywords": [
+    "tapete eva (trae resultados en portugués)",
+    "rompecabezas (trae rompecabezas de 3,000 piezas)",
+    "Sam's / Home Depot / Walmart / Costco (menudeo de navegación)",
+    "piso eva / piso foamy (es el terreno de pisosfoamymayoreo)"
+  ],
+  "keywords_source": "Comité 2026-11-05: autocompletado de Google MX, Google Trends, competencia en la SERP y vocabulario de WhatsApp"
 }
